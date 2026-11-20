@@ -1,7 +1,7 @@
-"""Build report/TeamName_Report.pdf from report/report.md and report/TeamName_Slides.pdf from report/slides.md.
+"""Build report/forecast_AI_Report.pdf from report/report.md and report/forecast_AI_Slides.pdf from report/slides.md.
 
-  python report/build_report.py TeamName            # report + slides
-  python report/build_report.py TeamName --slides   # slides only
+  python report/build_report.py forecast_AI          # report + slides
+  python report/build_report.py forecast_AI --slides # slides only
 
 report.md may contain placeholders that are filled from the experiment outputs, so the report always
 shows the numbers that the code produced:
@@ -31,7 +31,7 @@ figure { margin: 10px 0 16px; text-align: center; page-break-inside: avoid; }
 figure img { max-width: 100%; max-height: 9.5cm; } figcaption { font-size: 9pt; color: #555; margin-top: 4px; }
 code { font-size: 9pt; background: #f4f4f2; padding: 0 2px; } pre { font-size: 8.5pt; background: #f4f4f2; padding: 6px;
  white-space: pre-wrap; page-break-inside: avoid; }
-.title { text-align: center; margin-top: 60px; } .title h1 { font-size: 24pt; } .pb { page-break-after: always; }
+.title { text-align: center; margin-top: 60px; } .title h1 { font-size: 24pt; } .title table { width: auto; margin: 10px auto 16px; font-size: 10pt; } .pb { page-break-after: always; }
 blockquote { border-left: 3px solid #2a78d6; margin: 8px 0; padding: 2px 10px; color: #333; background: #f5f8fd; }
 """
 
@@ -137,7 +137,7 @@ def build_slides(team):
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    team = args[0] if args else "TeamName"
+    team = args[0] if args else "forecast_AI"
     if "--slides" not in sys.argv:
         build_report(team)
     if (REP / "slides.md").exists():

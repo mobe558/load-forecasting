@@ -7,7 +7,16 @@
 Deep Learning – AI403 · Final Project (idea #13)<br>
 Pharos University in Alexandria · Faculty of Computer Science & AI · Fall 2026
 
-**Team:** TeamName — Member 1 (ID), Member 2 (ID), Member 3 (ID), Member 4 (ID)
+**Team:** forecast_AI
+
+| Member | Student ID |
+|---|---|
+| Mohab Mohamed Moustafa Mahmoud Mohamed Aboklela | 202303375 |
+| Rosana Zarif Sadek Semean | 202303306 |
+| Yousef Mohamed Ragab Abdo AboEita | 202302137 |
+| Avronia Magdy Tawfik Boutros | 202303908 |
+| Sandra Samer Samir Fargallah | 202303334 |
+
 
 Instructor: Dr. Sahar Ghanem · TAs: Esraa Habiba, Philopater Hany, Mohamed Ashraf
 
@@ -544,5 +553,5 @@ cannot anticipate.
 python data/download.py && python data/preprocess.py && python experiments/check_split.py
 python experiments/run_plan.py --workers 4 --threads 1     # all 49 runs (resumable)
 python src/evaluate.py && python experiments/error_analysis.py
-python report/build_report.py TeamName
+python report/build_report.py forecast_AI
 ```

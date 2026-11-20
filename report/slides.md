@@ -5,7 +5,9 @@
 
 Deep Learning AI403 · Final Project #13 · Pharos University in Alexandria · Fall 2026
 
-TeamName — Member 1 · Member 2 · Member 3 · Member 4
+**Team forecast_AI**
+
+Mohab Mohamed Moustafa Mahmoud Mohamed Aboklela · 202303375<br>Rosana Zarif Sadek Semean · 202303306<br>Yousef Mohamed Ragab Abdo AboEita · 202302137<br>Avronia Magdy Tawfik Boutros · 202303908<br>Sandra Samer Samir Fargallah · 202303334
 
 ---
 

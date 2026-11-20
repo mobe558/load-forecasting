@@ -1,4 +1,4 @@
-# Individual contribution log — TeamName_StudentID
+# Individual contribution log — forecast_AI_StudentID
 
 **Name:** ______________________  **Student ID:** ______________  **Co-signed by (teammate):** ______________________
 
@@ -18,4 +18,4 @@
 | | | | | |
 | | | | | |
 
-Export to PDF as `TeamName_StudentID_Log.pdf` (one per student).
+Export to PDF as `forecast_AI_StudentID_Log.pdf` (one per student).

@@ -1,6 +1,15 @@
 # Multi-horizon Electricity Load Forecasting (Project idea #13)
 
-**Team:** _TeamName_ — _member 1, member 2, member 3, member 4_ (fill in)
+**Team:** forecast_AI
+
+| Member | Student ID |
+|---|---|
+| Mohab Mohamed Moustafa Mahmoud Mohamed Aboklela | 202303375 |
+| Rosana Zarif Sadek Semean | 202303306 |
+| Yousef Mohamed Ragab Abdo AboEita | 202302137 |
+| Avronia Magdy Tawfik Boutros | 202303908 |
+| Sandra Samer Samir Fargallah | 202303334 |
+
 Deep Learning AI403 · Pharos University in Alexandria · Fall 2026
 
 Every day at 00:00, forecast the **24 hourly loads of the PJM East grid** (USA) for that day from
@@ -11,7 +20,7 @@ the **previous 168 hours of load + calendar information** (hour, weekday, season
 LightGBM baseline (paired bootstrap 95 % CI [−98, −4] MW) and 60 % better than "same hour last week".
 With a one-hot calendar encoding (selected on validation in the data-strategy study) it improves to
 **1,340 ± 10 MW (MAPE 4.13 %)**.
-All numbers: `experiments/tables/table4_main_results.md`; full write-up: `report/TeamName_Report.pdf`.
+All numbers: `experiments/tables/table4_main_results.md`; full write-up: `report/forecast_AI_Report.pdf`.
 
 ## Repository layout
 
@@ -34,7 +43,7 @@ load-forecasting/
 ├── checkpoints/        README with the link to the trained checkpoints
 ├── demo/app.py         Gradio live demo
 ├── docs/               problem_definition.md (Req. 1), dataset_documentation.md (Req. 2)
-├── report/             report.md -> TeamName_Report.pdf, slides
+├── report/             report.md -> forecast_AI_Report.pdf, slides.md -> forecast_AI_Slides.pdf
 └── contributions/      individual weekly logs
 ```
 
@@ -107,7 +116,7 @@ model's forecast against the actual load. Tab 2 takes your own CSV (`timestamp, 
 ## 6. Report and slides
 
 ```bash
-python report/build_report.py TeamName   # -> report/TeamName_Report.pdf + report/TeamName_Slides.pdf
+python report/build_report.py forecast_AI   # -> report/forecast_AI_Report.pdf + report/forecast_AI_Slides.pdf
 ```
 
 Sources: `report/report.md` and `report/slides.md`; tables and figures are pulled in from `experiments/` so the
