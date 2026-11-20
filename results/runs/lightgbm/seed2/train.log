@@ -1,0 +1,2 @@
+[lightgbm seed 2] train windows 113760, val 731, test 579
+[lightgbm seed 2] done: val MAE 1278.9 MW | test MAE 1441.6 MW, MAPE 4.45%

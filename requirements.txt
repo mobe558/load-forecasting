@@ -1,0 +1,10 @@
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+pyyaml>=6.0
+holidays>=0.50
+tabulate>=0.9        # pandas.DataFrame.to_markdown (result tables)
+torch>=2.2           # CPU build is enough
+lightgbm>=4.0        # baseline (macOS: brew install libomp)
+gradio>=4.0          # live demo
+markdown>=3.5        # report/build_report.py fallback when pandoc is not installed

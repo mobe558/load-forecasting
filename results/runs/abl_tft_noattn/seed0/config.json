@@ -1,0 +1,27 @@
+{
+  "model": {
+    "name": "tft",
+    "params": {
+      "d_model": 32,
+      "var_dim": 8,
+      "n_heads": 4,
+      "dropout": 0.1,
+      "revin": true,
+      "use_attention": false
+    }
+  },
+  "train": {
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 60,
+    "patience": 8,
+    "samples_per_epoch": 8192,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "loss": "l1"
+  },
+  "data": {},
+  "seed": 0,
+  "name": "abl_tft_noattn",
+  "test": true
+}

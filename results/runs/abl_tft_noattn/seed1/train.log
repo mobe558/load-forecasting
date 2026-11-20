@@ -1,0 +1,32 @@
+[abl_tft_noattn seed 1] train windows 113760, val 731, test 579
+epoch  1 loss 0.5184 val MAE  2675.6 MW (30s)
+epoch  2 loss 0.3565 val MAE  2167.3 MW (30s)
+epoch  3 loss 0.3091 val MAE  1939.0 MW (30s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 3
+epoch  4 loss 0.2754 val MAE  1723.4 MW (27s)
+epoch  5 loss 0.2580 val MAE  1733.7 MW (28s)
+epoch  6 loss 0.2453 val MAE  1638.6 MW (30s)
+epoch  7 loss 0.2415 val MAE  1553.8 MW (31s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 7
+epoch  8 loss 0.2337 val MAE  1628.1 MW (35s)
+epoch  9 loss 0.2384 val MAE  1544.1 MW (38s)
+epoch 10 loss 0.2288 val MAE  1563.1 MW (48s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 10
+epoch 11 loss 0.2285 val MAE  1509.3 MW (28s)
+epoch 12 loss 0.2251 val MAE  1504.0 MW (33s)
+epoch 13 loss 0.2189 val MAE  1536.6 MW (37s)
+epoch 14 loss 0.2195 val MAE  1477.7 MW (39s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 14
+epoch 15 loss 0.2152 val MAE  1543.0 MW (34s)
+epoch 16 loss 0.2170 val MAE  1541.8 MW (34s)
+epoch 17 loss 0.2131 val MAE  1677.4 MW (36s)
+epoch 18 loss 0.2080 val MAE  1511.2 MW (37s)
+time budget reached - re-run the same command to resume

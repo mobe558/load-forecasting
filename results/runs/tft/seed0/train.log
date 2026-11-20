@@ -1,0 +1,100 @@
+[tft seed 0] train windows 113760, val 731, test 579
+epoch  1 loss 0.5211 val MAE  2629.3 MW (23s)
+epoch  2 loss 0.3617 val MAE  2172.7 MW (24s)
+epoch  3 loss 0.2924 val MAE  1825.6 MW (25s)
+epoch  4 loss 0.2616 val MAE  1653.7 MW (25s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 4
+epoch  5 loss 0.2477 val MAE  1565.7 MW (24s)
+epoch  6 loss 0.2387 val MAE  1548.5 MW (25s)
+epoch  7 loss 0.2319 val MAE  1501.0 MW (24s)
+epoch  8 loss 0.2209 val MAE  1516.5 MW (35s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 8
+epoch  9 loss 0.2183 val MAE  1498.6 MW (24s)
+epoch 10 loss 0.2159 val MAE  1470.1 MW (25s)
+epoch 11 loss 0.2170 val MAE  1504.4 MW (25s)
+epoch 12 loss 0.2103 val MAE  1465.0 MW (25s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 12
+epoch 13 loss 0.2084 val MAE  1466.3 MW (23s)
+epoch 14 loss 0.2069 val MAE  1405.2 MW (24s)
+epoch 15 loss 0.2072 val MAE  1413.2 MW (24s)
+epoch 16 loss 0.2028 val MAE  1488.8 MW (25s)
+epoch 17 loss 0.2075 val MAE  1390.3 MW (24s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 17
+epoch 18 loss 0.1981 val MAE  1411.9 MW (23s)
+epoch 19 loss 0.1984 val MAE  1395.9 MW (23s)
+epoch 20 loss 0.1995 val MAE  1358.1 MW (24s)
+epoch 21 loss 0.1978 val MAE  1354.8 MW (25s)
+epoch 22 loss 0.1947 val MAE  1391.5 MW (28s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 22
+epoch 23 loss 0.1967 val MAE  1357.7 MW (23s)
+epoch 24 loss 0.1960 val MAE  1327.6 MW (24s)
+epoch 25 loss 0.1942 val MAE  1315.1 MW (24s)
+epoch 26 loss 0.1989 val MAE  1351.7 MW (25s)
+epoch 27 loss 0.1903 val MAE  1312.6 MW (25s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 27
+epoch 28 loss 0.1927 val MAE  1360.4 MW (24s)
+epoch 29 loss 0.1972 val MAE  1375.8 MW (24s)
+epoch 30 loss 0.1952 val MAE  1317.5 MW (24s)
+epoch 31 loss 0.1913 val MAE  1310.2 MW (27s)
+epoch 32 loss 0.1882 val MAE  1334.0 MW (27s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 32
+epoch 33 loss 0.1897 val MAE  1323.9 MW (26s)
+epoch 34 loss 0.1887 val MAE  1319.0 MW (26s)
+epoch 35 loss 0.1879 val MAE  1334.5 MW (25s)
+epoch 36 loss 0.1857 val MAE  1291.5 MW (25s)
+epoch 37 loss 0.1875 val MAE  1262.3 MW (25s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 37
+epoch 38 loss 0.1849 val MAE  1279.6 MW (25s)
+epoch 39 loss 0.1834 val MAE  1253.9 MW (27s)
+epoch 40 loss 0.1821 val MAE  1267.9 MW (27s)
+epoch 41 loss 0.1820 val MAE  1264.1 MW (26s)
+epoch 42 loss 0.1837 val MAE  1266.5 MW (26s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 42
+epoch 43 loss 0.1834 val MAE  1253.8 MW (24s)
+epoch 44 loss 0.1821 val MAE  1265.6 MW (25s)
+epoch 45 loss 0.1832 val MAE  1257.1 MW (26s)
+epoch 46 loss 0.1791 val MAE  1245.2 MW (26s)
+epoch 47 loss 0.1835 val MAE  1244.9 MW (26s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 47
+epoch 48 loss 0.1791 val MAE  1248.7 MW (28s)
+epoch 49 loss 0.1819 val MAE  1242.7 MW (29s)
+epoch 50 loss 0.1800 val MAE  1247.3 MW (29s)
+epoch 51 loss 0.1764 val MAE  1231.9 MW (29s)
+epoch 52 loss 0.1790 val MAE  1229.4 MW (27s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 52
+epoch 53 loss 0.1783 val MAE  1240.7 MW (25s)
+epoch 54 loss 0.1809 val MAE  1250.1 MW (25s)
+epoch 55 loss 0.1785 val MAE  1240.5 MW (25s)
+epoch 56 loss 0.1806 val MAE  1244.5 MW (33s)
+epoch 57 loss 0.1772 val MAE  1245.6 MW (36s)
+time budget reached - re-run the same command to resume
+[tft seed 0] train windows 113760, val 731, test 579
+resumed at epoch 57
+epoch 58 loss 0.1796 val MAE  1227.8 MW (29s)
+epoch 59 loss 0.1776 val MAE  1226.5 MW (37s)
+epoch 60 loss 0.1774 val MAE  1233.9 MW (33s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[tft seed 0] done: val MAE 1226.5 MW | test MAE 1412.8 MW, MAPE 4.36%

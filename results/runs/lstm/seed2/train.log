@@ -1,0 +1,100 @@
+[lstm seed 2] train windows 113760, val 731, test 579
+epoch  1 loss 0.5933 val MAE  2941.7 MW (25s)
+epoch  2 loss 0.4002 val MAE  2494.7 MW (26s)
+epoch  3 loss 0.3430 val MAE  2092.2 MW (26s)
+epoch  4 loss 0.2966 val MAE  1837.1 MW (26s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 4
+epoch  5 loss 0.2719 val MAE  1716.6 MW (23s)
+epoch  6 loss 0.2594 val MAE  1650.9 MW (24s)
+epoch  7 loss 0.2480 val MAE  1595.7 MW (24s)
+epoch  8 loss 0.2482 val MAE  1571.2 MW (31s)
+epoch  9 loss 0.2394 val MAE  1578.0 MW (29s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 9
+epoch 10 loss 0.2361 val MAE  1562.2 MW (24s)
+epoch 11 loss 0.2279 val MAE  1509.7 MW (26s)
+epoch 12 loss 0.2279 val MAE  1506.9 MW (26s)
+epoch 13 loss 0.2233 val MAE  1581.1 MW (25s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 13
+epoch 14 loss 0.2199 val MAE  1495.7 MW (23s)
+epoch 15 loss 0.2174 val MAE  1459.9 MW (25s)
+epoch 16 loss 0.2201 val MAE  1452.0 MW (25s)
+epoch 17 loss 0.2130 val MAE  1459.8 MW (24s)
+epoch 18 loss 0.2136 val MAE  1440.2 MW (24s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 18
+epoch 19 loss 0.2128 val MAE  1555.6 MW (23s)
+epoch 20 loss 0.2095 val MAE  1405.0 MW (24s)
+epoch 21 loss 0.2054 val MAE  1402.5 MW (25s)
+epoch 22 loss 0.2077 val MAE  1391.0 MW (26s)
+epoch 23 loss 0.2041 val MAE  1389.1 MW (28s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 23
+epoch 24 loss 0.2059 val MAE  1394.4 MW (22s)
+epoch 25 loss 0.2048 val MAE  1393.7 MW (23s)
+epoch 26 loss 0.2041 val MAE  1369.7 MW (24s)
+epoch 27 loss 0.1992 val MAE  1370.5 MW (24s)
+epoch 28 loss 0.2046 val MAE  1400.3 MW (24s)
+epoch 29 loss 0.1966 val MAE  1372.0 MW (25s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 29
+epoch 30 loss 0.2010 val MAE  1390.1 MW (24s)
+epoch 31 loss 0.1949 val MAE  1333.9 MW (24s)
+epoch 32 loss 0.1933 val MAE  1323.7 MW (25s)
+epoch 33 loss 0.1951 val MAE  1328.9 MW (28s)
+epoch 34 loss 0.1941 val MAE  1339.9 MW (28s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 34
+epoch 35 loss 0.1938 val MAE  1346.4 MW (25s)
+epoch 36 loss 0.1951 val MAE  1339.4 MW (26s)
+epoch 37 loss 0.1915 val MAE  1308.9 MW (26s)
+epoch 38 loss 0.1930 val MAE  1296.7 MW (26s)
+epoch 39 loss 0.1902 val MAE  1314.7 MW (26s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 39
+epoch 40 loss 0.1909 val MAE  1298.0 MW (25s)
+epoch 41 loss 0.1891 val MAE  1292.8 MW (27s)
+epoch 42 loss 0.1893 val MAE  1300.2 MW (27s)
+epoch 43 loss 0.1925 val MAE  1336.0 MW (26s)
+epoch 44 loss 0.1897 val MAE  1304.8 MW (26s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 44
+epoch 45 loss 0.1911 val MAE  1296.6 MW (23s)
+epoch 46 loss 0.1879 val MAE  1287.1 MW (25s)
+epoch 47 loss 0.1894 val MAE  1306.6 MW (27s)
+epoch 48 loss 0.1904 val MAE  1302.9 MW (26s)
+epoch 49 loss 0.1844 val MAE  1283.8 MW (26s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 49
+epoch 50 loss 0.1886 val MAE  1286.4 MW (26s)
+epoch 51 loss 0.1850 val MAE  1283.2 MW (28s)
+epoch 52 loss 0.1874 val MAE  1286.9 MW (28s)
+epoch 53 loss 0.1876 val MAE  1288.4 MW (28s)
+epoch 54 loss 0.1875 val MAE  1283.3 MW (28s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 54
+epoch 55 loss 0.1871 val MAE  1282.9 MW (24s)
+epoch 56 loss 0.1857 val MAE  1286.1 MW (25s)
+epoch 57 loss 0.1866 val MAE  1285.2 MW (25s)
+epoch 58 loss 0.1877 val MAE  1280.9 MW (33s)
+epoch 59 loss 0.1846 val MAE  1286.3 MW (36s)
+time budget reached - re-run the same command to resume
+[lstm seed 2] train windows 113760, val 731, test 579
+resumed at epoch 59
+epoch 60 loss 0.1863 val MAE  1284.2 MW (29s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[lstm seed 2] done: val MAE 1280.9 MW | test MAE 1442.2 MW, MAPE 4.48%

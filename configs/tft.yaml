@@ -1,0 +1,5 @@
+# Advanced architecture (Core Req. 4c): Temporal Fusion Transformer (compact re-implementation)
+model:
+  name: tft
+  params: {d_model: 32, var_dim: 8, n_heads: 4, dropout: 0.1, revin: true}
+train: {lr: 0.001}

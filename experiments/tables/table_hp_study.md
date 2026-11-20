@@ -1,0 +1,17 @@
+### Hyperparameter study (validation set, seed 0, equal 30-epoch screening budget per setting)
+
+| Model       | Hyperparameter   | Value          |   Best val MAE in 30 epochs (MW) |   Best epoch |   Params |
+|:------------|:-----------------|:---------------|---------------------------------:|-------------:|---------:|
+| transformer | lr               | 1e-3 (default) |                            1,265 |           28 |  186,947 |
+| transformer | lr               | 3e-4           |                            1,456 |           30 |  186,947 |
+| transformer | lr               | 3e-3           |                            1,269 |           28 |  186,947 |
+| transformer | d_model          | 32             |                            1,368 |           28 |   52,515 |
+| transformer | d_model          | 128            |                            1,213 |           29 |  701,571 |
+| transformer | dropout          | 0.0            |                            1,176 |           29 |  186,947 |
+| transformer | dropout          | 0.3            |                            1,512 |           28 |  186,947 |
+| lstm        | lr               | 1e-3 (default) |                            1,351 |           30 |   40,355 |
+| lstm        | lr               | 3e-4           |                            1,466 |           27 |   40,355 |
+| lstm        | lr               | 3e-3           |                            1,275 |           25 |   40,355 |
+| tft         | lr               | 1e-3 (default) |                            1,313 |           27 |   44,401 |
+| tft         | lr               | 3e-4           |                            1,432 |           28 |   44,401 |
+| tft         | lr               | 3e-3           |                            1,249 |           25 |   44,401 |

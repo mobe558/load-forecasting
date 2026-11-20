@@ -1,0 +1,5 @@
+# Modern model (Core Req. 4b): patch Transformer encoder-decoder, hand-written attention
+model:
+  name: transformer
+  params: {d_model: 64, n_heads: 4, enc_layers: 2, dec_layers: 2, d_ff: 128, dropout: 0.1, patch_len: 24, revin: true}
+train: {lr: 0.001}

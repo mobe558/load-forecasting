@@ -1,0 +1,43 @@
+# Every run of the project. `python experiments/run_plan.py` executes whatever is not done yet.
+# test: false  -> tuning run, the test set is never touched (Core Req. 2).
+# after: X     -> start only when every seed of run X has finished (e.g. fine-tune after pretraining).
+seeds: [0, 1, 2]
+
+runs:
+  # ---- Core Req. 3: baselines -------------------------------------------------------------------
+  - {name: naive_week, config: configs/naive_week.yaml, seeds: [0]}
+  - {name: naive_day,  config: configs/naive_day.yaml,  seeds: [0]}
+  - {name: lightgbm,   config: configs/lightgbm.yaml}
+  # ---- Core Req. 4 + 6: the three deep models, 3 seeds each, same split/preprocessing/budget ------
+  - {name: transformer, config: configs/transformer.yaml}
+  - {name: transformer_pretrain, config: configs/transformer_pretrain.yaml, seeds: [0]}   # used in Req. 7c
+  - {name: lstm,        config: configs/lstm.yaml}
+  - {name: tft,         config: configs/tft.yaml}
+  # ---- Core Req. 7c: pretrained vs scratch -------------------------------------------------------
+  - {name: transformer_finetune, config: configs/transformer_finetune.yaml, after: transformer_pretrain}
+  # low-data regime: only the last 2 training years (2013-2014) of PJME
+  - {name: pt_scratch_2y,  config: configs/transformer.yaml, set: [data.train_start="2013-01-01"]}
+  - {name: pt_finetune_2y, config: configs/transformer_finetune.yaml, set: [data.train_start="2013-01-01"], after: transformer_pretrain}
+  # ---- Core Req. 8: ablations --------------------------------------------------------------------
+  - {name: abl_transformer_nocal,   config: configs/transformer.yaml, set: [data.encoding=none]}
+  - {name: abl_transformer_noattn,  config: configs/transformer.yaml, set: [model.params.use_cross_attention=false]}
+  - {name: abl_tft_noattn,          config: configs/tft.yaml,         seeds: [0], set: [model.params.use_attention=false]}   # 1 seed: CPU time
+  # ---- Core Req. 7b: data-strategy study (representation) -----------------------------------------
+  # input normalisation: global z-score only vs + per-window RevIN (all main models use RevIN)
+  - {name: ds_transformer_norevin, config: configs/transformer.yaml, set: [model.params.revin=false]}
+  - {name: ds_transformer_onehot,  config: configs/transformer.yaml, set: [data.encoding=onehot]}
+  - {name: ds_transformer_lb72,    config: configs/transformer.yaml, seeds: [0], test: false, set: [data.lookback=72]}
+  - {name: ds_transformer_lb336,   config: configs/transformer.yaml, seeds: [0], test: false, set: [data.lookback=336]}
+  # ---- Core Req. 7a: hyperparameter study (validation only, seed 0) ----------------------------
+  # equal tuning budget: every deep model gets the same learning-rate grid {3e-4, 1e-3, 3e-3}
+  - {name: hp_transformer_lr3e-4, config: configs/transformer.yaml, seeds: [0], test: false, set: [train.max_epochs=30, train.lr=0.0003]}
+  - {name: hp_transformer_lr3e-3, config: configs/transformer.yaml, seeds: [0], test: false, set: [train.max_epochs=30, train.lr=0.003]}
+  - {name: hp_lstm_lr3e-4,        config: configs/lstm.yaml,        seeds: [0], test: false, set: [train.lr=0.0003]}
+  - {name: hp_lstm_lr3e-3,        config: configs/lstm.yaml,        seeds: [0], test: false, set: [train.lr=0.003]}
+  - {name: hp_tft_lr3e-4,         config: configs/tft.yaml,         seeds: [0], test: false, set: [train.lr=0.0003]}
+  - {name: hp_tft_lr3e-3,         config: configs/tft.yaml,         seeds: [0], test: false, set: [train.lr=0.003]}
+  # model size and regularisation (Transformer)
+  - {name: hp_transformer_d32,    config: configs/transformer.yaml, seeds: [0], test: false, set: [model.params.d_model=32, model.params.d_ff=64]}
+  - {name: hp_transformer_d128,   config: configs/transformer.yaml, seeds: [0], test: false, set: [model.params.d_model=128, model.params.d_ff=256]}
+  - {name: hp_transformer_drop0,  config: configs/transformer.yaml, seeds: [0], test: false, set: [model.params.dropout=0.0]}
+  - {name: hp_transformer_drop3,  config: configs/transformer.yaml, seeds: [0], test: false, set: [model.params.dropout=0.3]}

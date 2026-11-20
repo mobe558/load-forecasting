@@ -1,0 +1,19 @@
+{
+  "model": {
+    "name": "naive_day"
+  },
+  "data": {},
+  "train": {
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 60,
+    "patience": 8,
+    "samples_per_epoch": 8192,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "loss": "l1"
+  },
+  "seed": 0,
+  "name": "naive_day",
+  "test": true
+}

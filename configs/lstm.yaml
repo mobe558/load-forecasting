@@ -1,0 +1,5 @@
+# Classic model (Core Req. 4a): LSTM encoder-decoder (1 layer each, sized for CPU training)
+model:
+  name: lstm
+  params: {hidden: 64, layers: 1, dropout: 0.1, revin: true}
+train: {lr: 0.001}

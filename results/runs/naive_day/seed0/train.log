@@ -1,0 +1,2 @@
+[naive_day seed 0] train windows 113760, val 731, test 579
+[naive_day seed 0] done: val MAE 2136.9 MW | test MAE 2300.1 MW, MAPE 7.32%

@@ -1,0 +1,20 @@
+{
+  "params": 44401,
+  "model_size_mb": 0.201617,
+  "train_time_s": 2455.1334750652313,
+  "epochs": 60,
+  "best_val_mae_mw": 1212.73291015625,
+  "inference_ms_per_forecast": 1.0709289649932068,
+  "inference_ms_single": 4.301433349610306,
+  "peak_mem_mb": 1010800.0,
+  "hardware": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8,
+    "torch_threads": 1,
+    "device": "cpu",
+    "python": "3.12.5",
+    "torch": "2.5.1"
+  }
+}

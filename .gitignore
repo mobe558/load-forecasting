@@ -1,0 +1,12 @@
+data/raw/
+data/processed/
+results/runs/*/seed*/state.pt
+results/runs/*/seed*/*.tmp
+checkpoints/*.pt
+__pycache__/
+report/_*
+.DS_Store
+.venv/
+**/state.pt
+*.pyc
+results/_discarded/

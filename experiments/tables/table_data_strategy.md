@@ -1,0 +1,9 @@
+### Data-strategy study (Transformer)
+
+| Representation                                 |   Seeds | Val MAE (MW)   | Test MAE (MW)          |
+|:-----------------------------------------------|--------:|:---------------|:-----------------------|
+| cyclical sin/cos + RevIN, lookback 168 (final) |       3 | 1,205 ± 18     | 1,389 ± 12             |
+| global z-score only (no RevIN)                 |       3 | 1,331 ± 3      | 1,520 ± 19             |
+| one-hot calendar (45 features)                 |       3 | 1,182 ± 4      | 1,340 ± 10             |
+| lookback 72 h                                  |       1 | 1,209 ± 0      | not evaluated (tuning) |
+| lookback 336 h                                 |       1 | 1,225 ± 0      | not evaluated (tuning) |

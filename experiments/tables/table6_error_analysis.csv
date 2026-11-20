@@ -1,0 +1,7 @@
+Error type,Days in test,Large-error days (MAE > mean+1SD),Mean MAE (MW),Mean bias (MW),Example (worst day),Likely cause
+Extreme peak day (top 10% peak load),53,15,"1,948",-572,"2017-06-19 (Mon): MAE 4,629","Heatwave/cold snap: no temperature input, the model only sees last week's level and under-forecasts the peak"
+Sudden level change vs previous day (weather front),126,39,"1,817",+323,"2018-07-06 (Fri): MAE 6,097",Weather change between the forecast issue time and the target day is not observable from load alone
+Day before/after a holiday,29,3,"1,408",-56,"2018-05-27 (Sun): MAE 4,139",Bridge days are not encoded; behaviour is between weekday and holiday
+Public holiday,17,1,"1,352",-364,"2017-11-10 (Fri, Veterans Day (observed)): MAE 2,797",Only ~11 holidays/year in training; holiday flag is one bit for very different holidays (Christmas vs Columbus Day)
+Normal day,351,19,"1,126",-42,"2018-06-25 (Mon): MAE 4,701",Residual noise / unmodelled factors
+Daylight-saving change,3,0,833,+135,"2018-03-11 (Sun): MAE 1,199",Shifted daily profile around the clock change

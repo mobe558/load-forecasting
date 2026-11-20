@@ -1,0 +1,7 @@
+# Self-supervised-style pretraining corpus: 10 OTHER PJM regions, hours <= 2014-12-31 only.
+# Same architecture as transformer.yaml; early stopping on the PJME validation set.
+model:
+  name: transformer
+  params: {d_model: 64, n_heads: 4, enc_layers: 2, dec_layers: 2, d_ff: 128, dropout: 0.1, patch_len: 24, revin: true}
+data: {source: regions}
+train: {lr: 0.001, max_epochs: 20}

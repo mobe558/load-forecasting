@@ -1,0 +1,139 @@
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+epoch  1 loss 0.5213 val MAE  2626.2 MW (28s)
+epoch  2 loss 0.3602 val MAE  2138.5 MW (30s)
+epoch  3 loss 0.2906 val MAE  1793.7 MW (30s)
+epoch  4 loss 0.2626 val MAE  1757.9 MW (30s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 4
+epoch  5 loss 0.2467 val MAE  1558.0 MW (28s)
+epoch  6 loss 0.2367 val MAE  1562.2 MW (29s)
+epoch  7 loss 0.2330 val MAE  1512.3 MW (29s)
+epoch  8 loss 0.2249 val MAE  1535.2 MW (32s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 8
+epoch  9 loss 0.2229 val MAE  1485.7 MW (29s)
+epoch 10 loss 0.2221 val MAE  1460.8 MW (31s)
+epoch 11 loss 0.2213 val MAE  1525.9 MW (35s)
+epoch 12 loss 0.2180 val MAE  1478.2 MW (42s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 12
+epoch 13 loss 0.2163 val MAE  1485.9 MW (28s)
+epoch 14 loss 0.2111 val MAE  1417.9 MW (33s)
+epoch 15 loss 0.2150 val MAE  1430.7 MW (38s)
+epoch 16 loss 0.2097 val MAE  1416.9 MW (39s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 16
+epoch 17 loss 0.2117 val MAE  1406.2 MW (34s)
+epoch 18 loss 0.2049 val MAE  1436.4 MW (34s)
+epoch 19 loss 0.2040 val MAE  1399.2 MW (36s)
+epoch 20 loss 0.2073 val MAE  1418.4 MW (37s)
+time budget reached - re-run the same command to resume
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 20
+epoch 21 loss 0.2041 val MAE  1387.7 MW (17s)
+epoch 22 loss 0.2013 val MAE  1373.4 MW (17s)
+epoch 23 loss 0.2031 val MAE  1372.4 MW (17s)
+epoch 24 loss 0.2020 val MAE  1361.1 MW (17s)
+epoch 25 loss 0.2021 val MAE  1352.5 MW (18s)
+epoch 26 loss 0.2013 val MAE  1408.8 MW (17s)
+Traceback (most recent call last):
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 283, in <module>
+    main()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 271, in main
+    out, cost = runner(*args) if runner is run_baseline else runner(*args, a.time_budget)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 189, in run_deep
+    loss.backward()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 26
+epoch 27 loss 0.1973 val MAE  1346.1 MW (17s)
+Traceback (most recent call last):
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 283, in <module>
+    main()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 271, in main
+    out, cost = runner(*args) if runner is run_baseline else runner(*args, a.time_budget)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 188, in run_deep
+    loss = loss_fn(model(xp, xf), y)
+                   ^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/models/revin.py", line 25, in forward
+    y = self.model(x, x_fut)                                   # [B, H] in normalised units
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/models/tft.py", line 129, in forward
+    hp, state = self.enc(ep)
+                ^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py", line 1123, in forward
+    result = _VF.lstm(
+             ^^^^^^^^^
+KeyboardInterrupt
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 27
+epoch 28 loss 0.1998 val MAE  1389.3 MW (35s)
+epoch 29 loss 0.1993 val MAE  1362.5 MW (32s)
+epoch 30 loss 0.2014 val MAE  1346.8 MW (31s)
+epoch 31 loss 0.1972 val MAE  1329.4 MW (30s)
+epoch 32 loss 0.1937 val MAE  1377.6 MW (35s)
+epoch 33 loss 0.1962 val MAE  1335.3 MW (32s)
+epoch 34 loss 0.1933 val MAE  1317.3 MW (34s)
+epoch 35 loss 0.1939 val MAE  1393.9 MW (34s)
+epoch 36 loss 0.1971 val MAE  1334.3 MW (36s)
+epoch 37 loss 0.1975 val MAE  1282.4 MW (34s)
+epoch 38 loss 0.1942 val MAE  1311.1 MW (34s)
+epoch 39 loss 0.1919 val MAE  1289.6 MW (40s)
+epoch 40 loss 0.1889 val MAE  1299.3 MW (37s)
+epoch 41 loss 0.1903 val MAE  1292.0 MW (48s)
+epoch 42 loss 0.1881 val MAE  1274.2 MW (40s)
+epoch 43 loss 0.1875 val MAE  1262.6 MW (33s)
+epoch 44 loss 0.1878 val MAE  1292.3 MW (34s)
+epoch 45 loss 0.1888 val MAE  1245.9 MW (32s)
+epoch 46 loss 0.1843 val MAE  1265.6 MW (31s)
+epoch 47 loss 0.1886 val MAE  1242.1 MW (31s)
+epoch 48 loss 0.1836 val MAE  1252.2 MW (30s)
+epoch 49 loss 0.1854 val MAE  1236.3 MW (31s)
+epoch 50 loss 0.1847 val MAE  1255.4 MW (36s)
+epoch 51 loss 0.1805 val MAE  1262.5 MW (37s)
+epoch 52 loss 0.1839 val MAE  1224.2 MW (32s)
+[abl_tft_noattn seed 0] train windows 113760, val 731, test 579
+resumed at epoch 52
+epoch 53 loss 0.1818 val MAE  1244.1 MW (70s)
+epoch 53 loss 0.1821 val MAE  1236.7 MW (96s)
+epoch 54 loss 0.1839 val MAE  1229.7 MW (98s)
+epoch 54 loss 0.1844 val MAE  1232.4 MW (96s)
+epoch 55 loss 0.1824 val MAE  1244.3 MW (105s)
+epoch 55 loss 0.1824 val MAE  1240.1 MW (105s)
+epoch 56 loss 0.1839 val MAE  1236.3 MW (39s)
+epoch 57 loss 0.1802 val MAE  1232.5 MW (29s)
+epoch 58 loss 0.1805 val MAE  1218.8 MW (29s)
+epoch 59 loss 0.1803 val MAE  1221.8 MW (29s)
+epoch 60 loss 0.1792 val MAE  1211.8 MW (30s)
+[abl_tft_noattn seed 0] done: val MAE 1211.8 MW | test MAE 1417.1 MW, MAPE 4.38%

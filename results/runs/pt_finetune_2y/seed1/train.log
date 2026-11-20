@@ -1,0 +1,35 @@
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ROOT / cfg["init_from"], map_location="cpu"))
+[pt_finetune_2y seed 1] train windows 17497, val 731, test 579
+epoch  1 loss 0.2278 val MAE  1305.9 MW (11s)
+epoch  2 loss 0.2203 val MAE  1302.7 MW (11s)
+time budget reached - re-run the same command to resume
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ROOT / cfg["init_from"], map_location="cpu"))
+[pt_finetune_2y seed 1] train windows 17497, val 731, test 579
+resumed at epoch 2
+epoch  3 loss 0.2207 val MAE  1284.6 MW (12s)
+epoch  4 loss 0.2185 val MAE  1291.4 MW (11s)
+epoch  5 loss 0.2170 val MAE  1270.3 MW (12s)
+epoch  6 loss 0.2147 val MAE  1272.6 MW (12s)
+epoch  7 loss 0.2141 val MAE  1280.6 MW (11s)
+epoch  8 loss 0.2127 val MAE  1264.3 MW (12s)
+epoch  9 loss 0.2094 val MAE  1278.5 MW (11s)
+epoch 10 loss 0.2106 val MAE  1306.1 MW (11s)
+epoch 11 loss 0.2110 val MAE  1251.2 MW (11s)
+epoch 12 loss 0.2082 val MAE  1270.3 MW (11s)
+time budget reached - re-run the same command to resume
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ROOT / cfg["init_from"], map_location="cpu"))
+[pt_finetune_2y seed 1] train windows 17497, val 731, test 579
+resumed at epoch 12
+epoch 13 loss 0.2075 val MAE  1311.9 MW (10s)
+epoch 14 loss 0.2080 val MAE  1266.9 MW (11s)
+epoch 15 loss 0.2058 val MAE  1277.7 MW (11s)
+epoch 16 loss 0.2046 val MAE  1267.9 MW (12s)
+epoch 17 loss 0.2031 val MAE  1274.8 MW (12s)
+epoch 18 loss 0.2034 val MAE  1253.6 MW (11s)
+epoch 19 loss 0.2033 val MAE  1263.8 MW (12s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[pt_finetune_2y seed 1] done: val MAE 1251.2 MW | test MAE 1417.5 MW, MAPE 4.38%

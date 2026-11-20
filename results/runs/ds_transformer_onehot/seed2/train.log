@@ -1,0 +1,104 @@
+[ds_transformer_onehot seed 2] train windows 113760, val 731, test 579
+epoch  1 loss 0.6409 val MAE  3611.2 MW (8s)
+epoch  2 loss 0.4752 val MAE  2218.1 MW (7s)
+epoch  3 loss 0.3545 val MAE  1919.4 MW (7s)
+epoch  4 loss 0.3134 val MAE  1882.2 MW (7s)
+epoch  5 loss 0.2944 val MAE  1712.7 MW (7s)
+epoch  6 loss 0.2765 val MAE  1618.4 MW (7s)
+epoch  7 loss 0.2662 val MAE  1563.8 MW (7s)
+epoch  8 loss 0.2583 val MAE  1600.4 MW (7s)
+epoch  9 loss 0.2497 val MAE  1550.8 MW (8s)
+epoch 10 loss 0.2407 val MAE  1497.1 MW (7s)
+epoch 11 loss 0.2342 val MAE  1475.6 MW (8s)
+epoch 12 loss 0.2365 val MAE  1429.3 MW (7s)
+epoch 13 loss 0.2292 val MAE  1422.8 MW (8s)
+epoch 14 loss 0.2289 val MAE  1397.1 MW (7s)
+epoch 15 loss 0.2258 val MAE  1457.6 MW (7s)
+Traceback (most recent call last):
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 283, in <module>
+    main()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 271, in main
+    out, cost = runner(*args) if runner is run_baseline else runner(*args, a.time_budget)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 189, in run_deep
+    loss.backward()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[ds_transformer_onehot seed 2] train windows 113760, val 731, test 579
+resumed at epoch 15
+epoch 16 loss 0.2254 val MAE  1353.9 MW (8s)
+epoch 17 loss 0.2205 val MAE  1436.3 MW (7s)
+Traceback (most recent call last):
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 283, in <module>
+    main()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 271, in main
+    out, cost = runner(*args) if runner is run_baseline else runner(*args, a.time_budget)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/src/train.py", line 187, in run_deep
+    opt.zero_grad()
+  File "/Users/mohabmostafa/UNI/deeplearning/load-forecasting/.venv/lib/python3.12/site-packages/torch/_compile.py", line 22, in inner
+    @functools.wraps(fn)
+
+KeyboardInterrupt
+[ds_transformer_onehot seed 2] train windows 113760, val 731, test 579
+resumed at epoch 17
+epoch 18 loss 0.2197 val MAE  1413.0 MW (14s)
+epoch 19 loss 0.2201 val MAE  1337.2 MW (17s)
+[ds_transformer_onehot seed 2] train windows 113760, val 731, test 579
+resumed at epoch 19
+epoch 20 loss 0.2179 val MAE  1316.1 MW (36s)
+epoch 20 loss 0.2180 val MAE  1345.0 MW (36s)
+epoch 21 loss 0.2114 val MAE  1293.1 MW (38s)
+epoch 21 loss 0.2107 val MAE  1292.7 MW (38s)
+epoch 22 loss 0.2120 val MAE  1312.6 MW (38s)
+epoch 22 loss 0.2139 val MAE  1344.3 MW (36s)
+epoch 23 loss 0.2123 val MAE  1293.1 MW (36s)
+epoch 23 loss 0.2122 val MAE  1294.0 MW (36s)
+epoch 24 loss 0.2112 val MAE  1319.5 MW (37s)
+epoch 24 loss 0.2117 val MAE  1289.7 MW (38s)
+epoch 25 loss 0.2111 val MAE  1280.5 MW (38s)
+epoch 25 loss 0.2126 val MAE  1310.8 MW (41s)
+epoch 26 loss 0.2094 val MAE  1342.1 MW (46s)
+epoch 26 loss 0.2091 val MAE  1300.0 MW (43s)
+epoch 27 loss 0.2053 val MAE  1295.1 MW (39s)
+epoch 27 loss 0.2066 val MAE  1308.6 MW (38s)
+epoch 28 loss 0.2091 val MAE  1301.8 MW (15s)
+epoch 29 loss 0.2008 val MAE  1251.9 MW (14s)
+epoch 30 loss 0.2023 val MAE  1270.9 MW (14s)
+epoch 31 loss 0.2000 val MAE  1252.9 MW (14s)
+epoch 32 loss 0.1986 val MAE  1242.8 MW (14s)
+epoch 33 loss 0.2014 val MAE  1230.6 MW (14s)
+epoch 34 loss 0.2004 val MAE  1275.2 MW (13s)
+epoch 35 loss 0.2004 val MAE  1273.4 MW (14s)
+epoch 36 loss 0.1982 val MAE  1244.2 MW (15s)
+epoch 37 loss 0.1973 val MAE  1253.7 MW (14s)
+epoch 38 loss 0.1974 val MAE  1229.3 MW (13s)
+epoch 39 loss 0.1953 val MAE  1220.6 MW (14s)
+epoch 40 loss 0.1953 val MAE  1216.9 MW (14s)
+epoch 41 loss 0.1936 val MAE  1244.9 MW (14s)
+epoch 42 loss 0.1951 val MAE  1239.7 MW (15s)
+epoch 43 loss 0.1966 val MAE  1215.1 MW (15s)
+epoch 44 loss 0.1947 val MAE  1202.6 MW (15s)
+epoch 45 loss 0.1957 val MAE  1226.9 MW (14s)
+epoch 46 loss 0.1943 val MAE  1198.2 MW (14s)
+epoch 47 loss 0.1947 val MAE  1197.4 MW (14s)
+epoch 48 loss 0.1962 val MAE  1245.1 MW (14s)
+epoch 49 loss 0.1890 val MAE  1230.8 MW (14s)
+epoch 50 loss 0.1938 val MAE  1203.2 MW (14s)
+epoch 51 loss 0.1918 val MAE  1197.9 MW (14s)
+epoch 52 loss 0.1905 val MAE  1190.6 MW (14s)
+epoch 53 loss 0.1904 val MAE  1201.5 MW (14s)
+epoch 54 loss 0.1908 val MAE  1200.7 MW (14s)
+epoch 55 loss 0.1906 val MAE  1197.6 MW (14s)
+epoch 56 loss 0.1894 val MAE  1193.6 MW (14s)
+epoch 57 loss 0.1911 val MAE  1189.6 MW (14s)
+epoch 58 loss 0.1903 val MAE  1192.4 MW (14s)
+epoch 59 loss 0.1878 val MAE  1186.9 MW (14s)
+epoch 60 loss 0.1898 val MAE  1194.5 MW (14s)
+[ds_transformer_onehot seed 2] done: val MAE 1186.9 MW | test MAE 1335.3 MW, MAPE 4.11%

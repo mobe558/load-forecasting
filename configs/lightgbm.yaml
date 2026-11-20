@@ -1,0 +1,4 @@
+# Baseline (Core Req. 3): pooled direct LightGBM, one row per (origin, horizon)
+model:
+  name: lightgbm
+  params: {train_stride: 4, num_boost_round: 2000}

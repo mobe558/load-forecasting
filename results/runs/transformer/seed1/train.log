@@ -1,0 +1,68 @@
+[transformer seed 1] train windows 113760, val 731, test 579
+epoch  1 loss 0.5690 val MAE  2936.2 MW (9s)
+epoch  2 loss 0.4383 val MAE  2582.9 MW (9s)
+epoch  3 loss 0.3717 val MAE  1972.9 MW (9s)
+epoch  4 loss 0.3248 val MAE  1882.0 MW (9s)
+epoch  5 loss 0.2952 val MAE  1786.9 MW (9s)
+epoch  6 loss 0.2789 val MAE  1727.9 MW (9s)
+epoch  7 loss 0.2686 val MAE  1628.7 MW (9s)
+epoch  8 loss 0.2612 val MAE  1538.6 MW (9s)
+epoch  9 loss 0.2548 val MAE  1549.2 MW (9s)
+epoch 10 loss 0.2441 val MAE  1473.7 MW (10s)
+epoch 11 loss 0.2437 val MAE  1467.0 MW (10s)
+epoch 12 loss 0.2373 val MAE  1434.4 MW (10s)
+time budget reached - re-run the same command to resume
+[transformer seed 1] train windows 113760, val 731, test 579
+resumed at epoch 12
+epoch 13 loss 0.2342 val MAE  1420.8 MW (9s)
+epoch 14 loss 0.2311 val MAE  1494.2 MW (9s)
+epoch 15 loss 0.2295 val MAE  1419.6 MW (9s)
+epoch 16 loss 0.2251 val MAE  1408.5 MW (9s)
+epoch 17 loss 0.2235 val MAE  1386.9 MW (9s)
+epoch 18 loss 0.2196 val MAE  1331.6 MW (9s)
+epoch 19 loss 0.2190 val MAE  1369.7 MW (9s)
+epoch 20 loss 0.2200 val MAE  1311.8 MW (9s)
+epoch 21 loss 0.2198 val MAE  1393.1 MW (9s)
+epoch 22 loss 0.2152 val MAE  1337.3 MW (10s)
+epoch 23 loss 0.2145 val MAE  1361.1 MW (9s)
+epoch 24 loss 0.2125 val MAE  1339.1 MW (10s)
+epoch 25 loss 0.2098 val MAE  1311.4 MW (10s)
+epoch 26 loss 0.2062 val MAE  1313.0 MW (9s)
+epoch 27 loss 0.2068 val MAE  1274.0 MW (8s)
+time budget reached - re-run the same command to resume
+[transformer seed 1] train windows 113760, val 731, test 579
+resumed at epoch 27
+epoch 28 loss 0.2058 val MAE  1290.5 MW (9s)
+epoch 29 loss 0.2055 val MAE  1300.4 MW (9s)
+epoch 30 loss 0.2046 val MAE  1318.2 MW (9s)
+epoch 31 loss 0.2042 val MAE  1288.7 MW (9s)
+epoch 32 loss 0.2021 val MAE  1270.3 MW (9s)
+epoch 33 loss 0.2010 val MAE  1260.6 MW (9s)
+epoch 34 loss 0.2028 val MAE  1258.7 MW (9s)
+epoch 35 loss 0.2028 val MAE  1261.6 MW (9s)
+epoch 36 loss 0.2010 val MAE  1268.6 MW (10s)
+epoch 37 loss 0.2028 val MAE  1264.6 MW (10s)
+epoch 38 loss 0.2003 val MAE  1256.7 MW (10s)
+epoch 39 loss 0.2002 val MAE  1251.6 MW (9s)
+epoch 40 loss 0.2001 val MAE  1231.4 MW (10s)
+epoch 41 loss 0.1995 val MAE  1260.3 MW (8s)
+epoch 42 loss 0.2006 val MAE  1242.4 MW (8s)
+epoch 43 loss 0.1993 val MAE  1241.6 MW (5s)
+time budget reached - re-run the same command to resume
+[transformer seed 1] train windows 113760, val 731, test 579
+resumed at epoch 43
+epoch 44 loss 0.2017 val MAE  1246.7 MW (9s)
+epoch 45 loss 0.1962 val MAE  1245.3 MW (9s)
+epoch 46 loss 0.1986 val MAE  1237.4 MW (9s)
+epoch 47 loss 0.1969 val MAE  1224.0 MW (9s)
+epoch 48 loss 0.1973 val MAE  1233.1 MW (9s)
+epoch 49 loss 0.1962 val MAE  1240.9 MW (9s)
+epoch 50 loss 0.1977 val MAE  1233.0 MW (9s)
+epoch 51 loss 0.1968 val MAE  1228.0 MW (10s)
+epoch 52 loss 0.1982 val MAE  1229.6 MW (10s)
+epoch 53 loss 0.1952 val MAE  1236.1 MW (10s)
+epoch 54 loss 0.1970 val MAE  1227.0 MW (9s)
+epoch 55 loss 0.1957 val MAE  1237.8 MW (9s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[transformer seed 1] done: val MAE 1224.0 MW | test MAE 1402.2 MW, MAPE 4.32%

@@ -1,0 +1,30 @@
+[pt_scratch_2y seed 1] train windows 17497, val 731, test 579
+epoch  1 loss 0.5544 val MAE  2884.9 MW (19s)
+time budget reached - re-run the same command to resume
+[pt_scratch_2y seed 1] train windows 17497, val 731, test 579
+resumed at epoch 1
+epoch  2 loss 0.4374 val MAE  2468.3 MW (12s)
+epoch  3 loss 0.3675 val MAE  2034.0 MW (10s)
+epoch  4 loss 0.3210 val MAE  1757.1 MW (10s)
+epoch  5 loss 0.2937 val MAE  1701.9 MW (10s)
+epoch  6 loss 0.2750 val MAE  1587.8 MW (5s)
+epoch  7 loss 0.2631 val MAE  1579.0 MW (5s)
+time budget reached - re-run the same command to resume
+[pt_scratch_2y seed 1] train windows 17497, val 731, test 579
+resumed at epoch 7
+epoch  8 loss 0.2537 val MAE  1526.4 MW (9s)
+epoch  9 loss 0.2427 val MAE  1549.3 MW (10s)
+epoch 10 loss 0.2428 val MAE  1482.9 MW (10s)
+epoch 11 loss 0.2375 val MAE  1517.6 MW (10s)
+epoch 12 loss 0.2297 val MAE  1479.7 MW (10s)
+epoch 13 loss 0.2258 val MAE  1498.0 MW (10s)
+epoch 14 loss 0.2217 val MAE  1507.9 MW (10s)
+epoch 15 loss 0.2187 val MAE  1515.9 MW (10s)
+epoch 16 loss 0.2140 val MAE  1484.9 MW (10s)
+epoch 17 loss 0.2103 val MAE  1492.7 MW (10s)
+epoch 18 loss 0.2084 val MAE  1495.4 MW (10s)
+epoch 19 loss 0.2059 val MAE  1490.0 MW (11s)
+epoch 20 loss 0.2043 val MAE  1492.2 MW (12s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[pt_scratch_2y seed 1] done: val MAE 1479.7 MW | test MAE 1629.1 MW, MAPE 5.10%

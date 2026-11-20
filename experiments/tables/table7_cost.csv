@@ -1,0 +1,9 @@
+Model,Parameters,Size (MB),Train time (s),Epochs,"Inference (ms / day-ahead forecast, batched)","Latency (ms, single forecast)",Peak RAM (MB),Hardware
+Seasonal naive (last week),0,0.00,0 ± 0,-,0.000,-,314,"aarch64 CPU, 4 cores, 1 thread(s)"
+Seasonal naive (yesterday),0,0.00,0 ± 0,-,0.000,-,314,"aarch64 CPU, 4 cores, 1 thread(s)"
+LightGBM (baseline),288 trees,1.76,87 ± 3,-,0.220,-,502,"aarch64 CPU, 4 cores, 1 thread(s)"
+LSTM enc-dec (classic),"40,355",0.17,"1,526 ± 18",60 ± 0,1.090,3.8,555,"aarch64 CPU, 4 cores, 1 thread(s)"
+"Transformer (modern, hand-written attn)","186,947",1.30,536 ± 23,58 ± 2,0.373,45.1,552,"aarch64 CPU, 4 cores, 1 thread(s)"
+TFT (advanced),"44,401",0.20,"1,774 ± 149",60 ± 0,1.489,45.0,1151,"aarch64 CPU, 4 cores, 1 thread(s)"
+Transformer pretrained+fine-tuned,"186,947",1.30,534 ± 127,45 ± 11,0.419,56.6,545,"aarch64 CPU, 4 cores, 1 thread(s)"
+transformer_pretrain,"186,947",1.30,184 ± 0,20 ± 0,0.394,55.1,595,"aarch64 CPU, 4 cores, 1 thread(s)"

@@ -1,0 +1,18 @@
+{
+  "params": 288,
+  "params_note": "trees",
+  "model_size_mb": 1.755025,
+  "train_time_s": 84.97386479377747,
+  "inference_ms_per_forecast": 0.1993286383172597,
+  "peak_mem_mb": 501.23828125,
+  "hardware": {
+    "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
+    "machine": "aarch64",
+    "processor": "aarch64",
+    "cpu_count": 4,
+    "torch_threads": 1,
+    "device": "cpu",
+    "python": "3.10.12",
+    "torch": "2.5.1"
+  }
+}

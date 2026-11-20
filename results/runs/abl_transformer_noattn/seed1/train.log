@@ -1,0 +1,61 @@
+[abl_transformer_noattn seed 1] train windows 113760, val 731, test 579
+epoch  1 loss 0.5807 val MAE  2987.0 MW (11s)
+epoch  2 loss 0.4448 val MAE  2736.9 MW (12s)
+epoch  3 loss 0.3891 val MAE  2162.6 MW (12s)
+epoch  4 loss 0.3345 val MAE  1940.1 MW (12s)
+epoch  5 loss 0.2983 val MAE  1758.4 MW (11s)
+epoch  6 loss 0.2811 val MAE  1753.2 MW (11s)
+epoch  7 loss 0.2714 val MAE  1617.9 MW (11s)
+epoch  8 loss 0.2576 val MAE  1573.4 MW (10s)
+epoch  9 loss 0.2550 val MAE  1534.6 MW (10s)
+epoch 10 loss 0.2469 val MAE  1488.0 MW (10s)
+epoch 11 loss 0.2460 val MAE  1466.0 MW (10s)
+epoch 12 loss 0.2373 val MAE  1440.1 MW (8s)
+time budget reached - re-run the same command to resume
+[abl_transformer_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 12
+epoch 13 loss 0.2350 val MAE  1433.0 MW (9s)
+epoch 14 loss 0.2299 val MAE  1430.5 MW (10s)
+epoch 15 loss 0.2273 val MAE  1418.0 MW (10s)
+epoch 16 loss 0.2244 val MAE  1422.1 MW (10s)
+epoch 17 loss 0.2239 val MAE  1391.3 MW (10s)
+epoch 18 loss 0.2197 val MAE  1360.5 MW (10s)
+epoch 19 loss 0.2202 val MAE  1359.8 MW (10s)
+epoch 20 loss 0.2202 val MAE  1308.3 MW (10s)
+epoch 21 loss 0.2175 val MAE  1352.8 MW (10s)
+epoch 22 loss 0.2149 val MAE  1342.8 MW (10s)
+epoch 23 loss 0.2161 val MAE  1368.1 MW (10s)
+epoch 24 loss 0.2144 val MAE  1311.0 MW (10s)
+epoch 25 loss 0.2094 val MAE  1320.2 MW (10s)
+epoch 26 loss 0.2064 val MAE  1290.3 MW (10s)
+time budget reached - re-run the same command to resume
+[abl_transformer_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 26
+epoch 27 loss 0.2074 val MAE  1267.3 MW (9s)
+epoch 28 loss 0.2065 val MAE  1289.8 MW (9s)
+epoch 29 loss 0.2066 val MAE  1298.3 MW (10s)
+epoch 30 loss 0.2047 val MAE  1281.5 MW (10s)
+epoch 31 loss 0.2050 val MAE  1284.0 MW (11s)
+epoch 32 loss 0.2024 val MAE  1254.1 MW (11s)
+epoch 33 loss 0.2026 val MAE  1265.6 MW (11s)
+epoch 34 loss 0.2034 val MAE  1244.6 MW (11s)
+epoch 35 loss 0.2041 val MAE  1241.8 MW (11s)
+epoch 36 loss 0.2029 val MAE  1240.2 MW (11s)
+epoch 37 loss 0.2033 val MAE  1238.9 MW (11s)
+epoch 38 loss 0.2019 val MAE  1242.7 MW (11s)
+epoch 39 loss 0.2010 val MAE  1242.0 MW (9s)
+epoch 40 loss 0.2018 val MAE  1212.0 MW (6s)
+epoch 41 loss 0.1996 val MAE  1231.4 MW (6s)
+time budget reached - re-run the same command to resume
+[abl_transformer_noattn seed 1] train windows 113760, val 731, test 579
+resumed at epoch 41
+epoch 42 loss 0.2030 val MAE  1232.7 MW (9s)
+epoch 43 loss 0.1999 val MAE  1237.7 MW (10s)
+epoch 44 loss 0.2031 val MAE  1226.9 MW (10s)
+epoch 45 loss 0.1974 val MAE  1230.6 MW (11s)
+epoch 46 loss 0.1998 val MAE  1221.2 MW (11s)
+epoch 47 loss 0.1991 val MAE  1212.9 MW (11s)
+epoch 48 loss 0.1988 val MAE  1225.8 MW (11s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[abl_transformer_noattn seed 1] done: val MAE 1212.0 MW | test MAE 1395.3 MW, MAPE 4.30%

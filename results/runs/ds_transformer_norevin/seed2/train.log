@@ -1,0 +1,79 @@
+[transformer seed 2] train windows 113760, val 731, test 579
+epoch  1 loss 0.5663 val MAE  2784.6 MW (7s)
+epoch  2 loss 0.4237 val MAE  2147.8 MW (7s)
+epoch  3 loss 0.3643 val MAE  1876.1 MW (7s)
+epoch  4 loss 0.3240 val MAE  1892.1 MW (7s)
+epoch  5 loss 0.2978 val MAE  1791.2 MW (7s)
+epoch  6 loss 0.2768 val MAE  1598.1 MW (7s)
+time budget reached - re-run the same command to resume
+[transformer seed 2] train windows 113760, val 731, test 579
+resumed at epoch 6
+epoch  7 loss 0.2652 val MAE  1585.3 MW (9s)
+epoch  8 loss 0.2590 val MAE  1579.3 MW (10s)
+epoch  9 loss 0.2487 val MAE  1534.1 MW (9s)
+epoch 10 loss 0.2462 val MAE  1546.4 MW (9s)
+epoch 11 loss 0.2381 val MAE  1478.0 MW (9s)
+epoch 12 loss 0.2378 val MAE  1543.5 MW (9s)
+epoch 13 loss 0.2321 val MAE  1498.8 MW (9s)
+epoch 14 loss 0.2289 val MAE  1467.2 MW (9s)
+epoch 15 loss 0.2266 val MAE  1393.5 MW (9s)
+epoch 16 loss 0.2285 val MAE  1381.7 MW (9s)
+epoch 17 loss 0.2205 val MAE  1429.1 MW (9s)
+epoch 18 loss 0.2212 val MAE  1409.0 MW (9s)
+epoch 19 loss 0.2188 val MAE  1445.1 MW (9s)
+epoch 20 loss 0.2220 val MAE  1419.3 MW (9s)
+epoch 21 loss 0.2142 val MAE  1405.4 MW (9s)
+time budget reached - re-run the same command to resume
+[transformer seed 2] train windows 113760, val 731, test 579
+resumed at epoch 21
+epoch 22 loss 0.2126 val MAE  1391.5 MW (9s)
+epoch 23 loss 0.2111 val MAE  1356.7 MW (9s)
+epoch 24 loss 0.2125 val MAE  1377.1 MW (9s)
+epoch 25 loss 0.2126 val MAE  1437.9 MW (9s)
+epoch 26 loss 0.2111 val MAE  1394.5 MW (9s)
+epoch 27 loss 0.2094 val MAE  1389.6 MW (9s)
+epoch 28 loss 0.2080 val MAE  1348.9 MW (9s)
+epoch 29 loss 0.2047 val MAE  1392.5 MW (9s)
+epoch 30 loss 0.2068 val MAE  1412.8 MW (9s)
+epoch 31 loss 0.2063 val MAE  1377.4 MW (9s)
+epoch 32 loss 0.2062 val MAE  1395.4 MW (9s)
+epoch 33 loss 0.2052 val MAE  1343.2 MW (9s)
+epoch 34 loss 0.2050 val MAE  1342.5 MW (9s)
+epoch 35 loss 0.2047 val MAE  1366.5 MW (9s)
+epoch 36 loss 0.2033 val MAE  1356.7 MW (9s)
+epoch 37 loss 0.2034 val MAE  1354.4 MW (9s)
+time budget reached - re-run the same command to resume
+[transformer seed 2] train windows 113760, val 731, test 579
+resumed at epoch 37
+epoch 38 loss 0.2036 val MAE  1366.4 MW (8s)
+epoch 39 loss 0.2041 val MAE  1341.4 MW (9s)
+epoch 40 loss 0.2042 val MAE  1360.4 MW (9s)
+epoch 41 loss 0.2018 val MAE  1361.6 MW (9s)
+epoch 42 loss 0.2020 val MAE  1341.3 MW (9s)
+epoch 43 loss 0.2051 val MAE  1333.3 MW (9s)
+epoch 44 loss 0.2011 val MAE  1328.3 MW (9s)
+epoch 45 loss 0.2047 val MAE  1348.3 MW (9s)
+epoch 46 loss 0.2009 val MAE  1338.3 MW (9s)
+epoch 47 loss 0.2038 val MAE  1350.7 MW (10s)
+epoch 48 loss 0.2047 val MAE  1369.4 MW (9s)
+epoch 49 loss 0.1996 val MAE  1352.0 MW (9s)
+epoch 50 loss 0.2039 val MAE  1344.3 MW (9s)
+epoch 51 loss 0.2017 val MAE  1337.6 MW (9s)
+epoch 52 loss 0.2014 val MAE  1341.9 MW (8s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+Traceback (most recent call last):
+  File "/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py", line 280, in <module>
+    main()
+  File "/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py", line 268, in main
+    out, cost = runner(*args) if runner is run_baseline else runner(*args, a.time_budget)
+  File "/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py", line 236, in run_deep
+    state_path.unlink(missing_ok=True)
+  File "/usr/lib/python3.10/pathlib.py", line 1206, in unlink
+    self._accessor.unlink(self)
+PermissionError: [Errno 1] Operation not permitted: '/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/results/runs/transformer/seed2/state.pt'
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[transformer seed 2] train windows 113760, val 731, test 579
+resumed at epoch 52
+[transformer seed 2] done: val MAE 1328.3 MW | test MAE 1533.4 MW, MAPE 4.80%

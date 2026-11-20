@@ -1,0 +1,29 @@
+{
+  "model": {
+    "name": "transformer",
+    "params": {
+      "d_model": 128,
+      "n_heads": 4,
+      "enc_layers": 2,
+      "dec_layers": 2,
+      "d_ff": 256,
+      "dropout": 0.1,
+      "patch_len": 24,
+      "revin": true
+    }
+  },
+  "train": {
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 60,
+    "patience": 8,
+    "samples_per_epoch": 8192,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "loss": "l1"
+  },
+  "data": {},
+  "seed": 0,
+  "name": "hp_transformer_d128",
+  "test": false
+}

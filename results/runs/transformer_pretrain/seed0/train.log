@@ -1,0 +1,27 @@
+[transformer_pretrain seed 0] train windows 627169, val 731, test 579
+epoch  1 loss 0.5800 val MAE  2862.1 MW (9s)
+epoch  2 loss 0.4477 val MAE  2304.3 MW (9s)
+epoch  3 loss 0.3831 val MAE  1959.4 MW (9s)
+epoch  4 loss 0.3476 val MAE  1886.2 MW (9s)
+epoch  5 loss 0.3197 val MAE  1721.1 MW (9s)
+epoch  6 loss 0.3107 val MAE  1767.1 MW (9s)
+epoch  7 loss 0.2988 val MAE  1628.9 MW (9s)
+epoch  8 loss 0.2891 val MAE  1573.2 MW (9s)
+epoch  9 loss 0.2857 val MAE  1513.5 MW (10s)
+epoch 10 loss 0.2783 val MAE  1521.8 MW (10s)
+epoch 11 loss 0.2721 val MAE  1486.0 MW (10s)
+epoch 12 loss 0.2712 val MAE  1470.4 MW (10s)
+time budget reached - re-run the same command to resume
+[transformer_pretrain seed 0] train windows 627169, val 731, test 579
+resumed at epoch 12
+epoch 13 loss 0.2688 val MAE  1509.5 MW (9s)
+epoch 14 loss 0.2665 val MAE  1448.2 MW (9s)
+epoch 15 loss 0.2651 val MAE  1473.4 MW (9s)
+epoch 16 loss 0.2626 val MAE  1407.8 MW (9s)
+epoch 17 loss 0.2558 val MAE  1446.7 MW (9s)
+epoch 18 loss 0.2562 val MAE  1427.2 MW (9s)
+epoch 19 loss 0.2549 val MAE  1390.0 MW (10s)
+epoch 20 loss 0.2543 val MAE  1412.1 MW (9s)
+/sessions/rcw-01e5rgxovkeruacekvgkpsvf/mnt/deeplearning/load-forecasting/src/train.py:215: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location="cpu"))
+[transformer_pretrain seed 0] done: val MAE 1390.0 MW | test MAE 1545.9 MW, MAPE 4.80%

@@ -1,0 +1,20 @@
+{
+  "params": 186947,
+  "model_size_mb": 1.29898,
+  "train_time_s": 184.27680826187134,
+  "epochs": 20,
+  "best_val_mae_mw": 1389.9996337890625,
+  "inference_ms_per_forecast": 0.3940416741247622,
+  "inference_ms_single": 55.12781879997419,
+  "peak_mem_mb": 595.47265625,
+  "hardware": {
+    "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
+    "machine": "aarch64",
+    "processor": "aarch64",
+    "cpu_count": 4,
+    "torch_threads": 1,
+    "device": "cpu",
+    "python": "3.10.12",
+    "torch": "2.5.1"
+  }
+}

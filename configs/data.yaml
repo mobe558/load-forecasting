@@ -1,0 +1,26 @@
+# Shared data configuration - every model reads this file so that all
+# experiments use the SAME split, preprocessing and windowing (Core Req. 6).
+dataset:
+  name: PJME_hourly
+  raw_path: data/raw/PJME_hourly.csv
+  url: https://raw.githubusercontent.com/panambY/Hourly_Energy_Consumption/master/data/PJME_hourly.csv
+  kaggle_ref: robikscube/hourly-energy-consumption
+  expected_sha256: 4eb2b16d42bf07ec41ab55cb842191594cb69452725a6d3c0991658a628fde84
+  timestamp_col: Datetime
+  target_col: PJME_MW
+
+split:                      # chronological, no shuffling; a window belongs to the
+  train_end: "2014-12-31 23:00:00"   # split that contains ALL of its target hours
+  val_end:   "2016-12-31 23:00:00"
+  # test = everything after val_end (2017-01-01 -> 2018-08-03), used ONCE at the end
+
+windowing:
+  lookback: 168             # 7 days of past hourly load as input
+  horizon: 24               # predict the next 24 hours (multi-horizon output)
+  train_stride: 1           # every hour is a training origin
+  eval_stride: 24           # val/test: one forecast per day, issued at 00:00 (day-ahead)
+
+features:
+  holiday_country: US       # PJM serves US states; federal holidays (observed)
+  calendar_encoding: cyclical   # cyclical (sin/cos) | onehot  -> data-representation study
+  scaler: zscore            # fitted on TRAIN ONLY

@@ -1,0 +1,23 @@
+{
+  "model": {
+    "name": "lightgbm",
+    "params": {
+      "train_stride": 4,
+      "num_boost_round": 2000
+    }
+  },
+  "data": {},
+  "train": {
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 60,
+    "patience": 8,
+    "samples_per_epoch": 8192,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "loss": "l1"
+  },
+  "seed": 2,
+  "name": "lightgbm",
+  "test": true
+}
